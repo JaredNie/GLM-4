@@ -54,9 +54,15 @@ def main(
         model_dir: Annotated[str, typer.Argument(help='')],
 ):
     # For GLM-4 Finetune Without Tools
+    # messages = [
+    #     {
+    #         "role": "user", "content": "#裙子#夏天",
+    #     }
+    # ]
+
     messages = [
         {
-            "role": "user", "content": "#裙子#夏天",
+            "role": "user", "content": "你是谁？",
         }
     ]
 
