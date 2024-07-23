@@ -17,7 +17,7 @@ import torch
 from threading import Thread
 from transformers import AutoTokenizer, StoppingCriteria, StoppingCriteriaList, TextIteratorStreamer, AutoModel
 
-MODEL_PATH = os.environ.get('MODEL_PATH', 'THUDM/glm-4-9b-chat')
+MODEL_PATH = os.environ.get('MODEL_PATH', '/root/autodl-tmp/ZhipuAI/glm-4-9b-chat')
 
 ## If use peft model.
 # def load_model_and_tokenizer(model_dir, trust_remote_code: bool = True):
